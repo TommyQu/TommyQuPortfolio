@@ -1,0 +1,17 @@
+.position-title {
+	margin-left: -14px;
+	font-weight: bold;
+	font-size: 200%;
+}
+
+.work-company{
+	margin-left: -14px;
+	font-size: 120%;
+	color: #828282;
+}
+
+.work-date {
+	float: right;
+	font-weight: bold;
+	font-size: 200%;
+}
