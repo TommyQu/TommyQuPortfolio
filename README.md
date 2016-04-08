@@ -1,1 +1,1 @@
-# [Tommy Qu Portfolio]
+# Tommy Qu Portfolio
