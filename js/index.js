@@ -11,6 +11,7 @@ $(document).ready(function() {
 	google.charts.load('current', {'packages':['corechart']});
 	google.charts.setOnLoadCallback(drawChart);
 	function drawChart() {
+		//Draw Java Donut
 		var data = google.visualization.arrayToDataTable([
 		  ['Effort', 'Amount given'],
 		  ['Java', 90],
@@ -18,6 +19,7 @@ $(document).ready(function() {
 		]);
 
 		var options = {
+			backgroundColor: 'transparent',
 			pieHole: 0.5,
 			slices: {
 		  		1: {
@@ -30,6 +32,7 @@ $(document).ready(function() {
 		var chart = new google.visualization.PieChart(document.getElementById('java-donut'));
 		chart.draw(data, options);
 
+		//Draw Android Donut
 		var androidData = google.visualization.arrayToDataTable([
 		  ['Effort', 'Amount given'],
 		  ['Android', 85],
@@ -37,6 +40,7 @@ $(document).ready(function() {
 		]);
 
 		var androidOptions = {
+		  backgroundColor: 'transparent',
 		  pieHole: 0.5,
 		  slices: {
 			0: {
@@ -51,6 +55,30 @@ $(document).ready(function() {
 
 		var androidChart = new google.visualization.PieChart(document.getElementById('android-donut'));
 		androidChart.draw(androidData, androidOptions);
+
+		//Draw Cordova Donut
+		var cordovaData = google.visualization.arrayToDataTable([
+		  ['Effort', 'Amount given'],
+		  ['Cordova', 85],
+		  ['', 15]
+		]);
+
+		var cordovaOptions = {
+		  backgroundColor: 'transparent',
+		  pieHole: 0.5,
+		  slices: {
+			0: {
+				color: 'orange'
+			},
+		  	1: {
+		  		color: 'transparent'
+		  	}
+		  },
+		  legend: 'none'
+		};
+
+		var cordovaChart = new google.visualization.PieChart(document.getElementById('cordova-donut'));
+		cordovaChart.draw(cordovaData, cordovaOptions);
 	}
 
 });
