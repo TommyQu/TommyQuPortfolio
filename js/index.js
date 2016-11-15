@@ -81,4 +81,18 @@ $(document).ready(function() {
 		cordovaChart.draw(cordovaData, cordovaOptions);
 	}
 
+
+	$(".fancybox-thumb").fancybox({
+		prevEffect	: 'elastic',
+		nextEffect	: 'elastic',
+		helpers	: {
+			title	: {
+				type: 'outside'
+			},
+			thumbs	: {
+				width	: 50,
+				height	: 50
+			}
+		}
+	});
 });

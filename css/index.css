@@ -25,3 +25,15 @@
 	margin-top: -45px;
     margin-left: -5px;
 }
+
+.project-content {
+	width: 90%;
+}
+
+.hidden-fancybox {
+	display: none;
+}
+
+.syc-display {
+	width: 50%;
+}

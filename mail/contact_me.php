@@ -1,5 +1,6 @@
 <?php
 // Check for empty fields
+echo "Hello world!";
 if(empty($_POST['name'])  		||
    empty($_POST['email']) 		||
    empty($_POST['phone']) 		||
