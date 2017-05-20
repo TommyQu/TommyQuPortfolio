@@ -1,3 +1,3 @@
 # Tommy Qu Portfolio
 
-Link http://tommyqu.me/
+Link http://portfolio.tommyqu.com
